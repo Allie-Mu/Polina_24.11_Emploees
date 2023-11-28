@@ -1,19 +1,19 @@
 package org.example;
 
-class Emploee {
+class Employee {
 
     static String name;
     static String position;
     static String email;
-    static int phoneNumber;
+    static long phoneNumber;
     static int salary;
     static int age;
 
-    public Emploee(
+    public Employee(
             String name,
             String position,
             String email,
-            int phoneNumber,
+            long phoneNumber,
             int salary,
             int age) {
         this.name = name;
@@ -24,7 +24,7 @@ class Emploee {
         this.age = age;
     }
 
-    public static void printInfo() {
+    public static void printInfo(Employee employee) {
         System.out.println("ФИО: " + name);
         System.out.println("Должность: " + position);
         System.out.println("Email: " + email);
@@ -32,5 +32,7 @@ class Emploee {
         System.out.println("Зарплата: " + salary);
         System.out.println("Возраст: " + age);
     }
+
+
 }
 
