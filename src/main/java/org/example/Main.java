@@ -11,9 +11,17 @@ public class Main {
         employees[3] = new Employee("Oleg Four", "manager", "of@office.com", 79876543214L, 80_000, 30);
         employees[4] = new Employee("Vladimir Five", "security", "vf@office.com", 79876543215L, 50_000, 40);
 
-        for (Employee emp : employees) {
-            Employee.printInfo(emp);
-            System.out.println();
+        System.out.println("Employees over 40:");
+        for (Employee employee : employees) {
+            if (employee.age >= 40)
+                Employee.printInfo(employee);
         }
+
+        /*for (Employee employee : employees) {
+            Employee.printInfo(employee);
+            System.out.println();
+        }*/
+
+
     }
 }

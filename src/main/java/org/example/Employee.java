@@ -2,12 +2,12 @@ package org.example;
 
 class Employee {
 
-    static String name;
-    static String position;
-    static String email;
-    static long phoneNumber;
-    static int salary;
-    static int age;
+    String name;
+    String position;
+    String email;
+    long phoneNumber; // int is too small
+    int salary;
+    int age;
 
     public Employee(
             String name,
@@ -15,7 +15,8 @@ class Employee {
             String email,
             long phoneNumber,
             int salary,
-            int age) {
+            int age    )
+    {
         this.name = name;
         this.position = position;
         this.email = email;
@@ -24,15 +25,14 @@ class Employee {
         this.age = age;
     }
 
-    public static void printInfo(Employee employee) {
-        System.out.println("ФИО: " + name);
-        System.out.println("Должность: " + position);
-        System.out.println("Email: " + email);
-        System.out.println("Телефон: " + phoneNumber);
-        System.out.println("Зарплата: " + salary);
-        System.out.println("Возраст: " + age);
-    }
-
-
+   public static void printInfo(Employee employee) {
+        System.out.println("Name: " + employee.name);
+        System.out.println("Position: " + employee.position);
+        System.out.println("Email: " + employee.email);
+        System.out.println("Phone number: " + employee.phoneNumber);
+        System.out.println("Salary: " + employee.salary);
+        System.out.println("Age: " + employee.age);
+        System.out.println();
+   }
 }
 
